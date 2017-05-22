@@ -26,3 +26,11 @@ POST /register
 
 - Result:
 {'status': 'User created successfully'}
+
+GET /auth_test (headers: [Authorization : auth_token])
+- Result: {
+            "msg": "Auth successful",
+            "data": user_email
+          }
+          
+    
