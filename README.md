@@ -28,6 +28,7 @@ POST /register
 {'status': 'User created successfully'}
 
 POST /pay-order
+[must login]
 - Request: { "nfc_id": "123##", "buyer_auth_token": "eeexssa"}
 - Result: { 'status': 'Order paid!' } or 'Order not paid!'
 
