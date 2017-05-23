@@ -1,3 +1,9 @@
 class Order < ApplicationRecord
-  has_one :nfc_device
+  def confirm
+    self[:status] = "Successful"
+  end
+
+  def set_failure
+    self[:status] = "Failed"
+  end
 end

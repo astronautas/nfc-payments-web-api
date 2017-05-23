@@ -26,3 +26,9 @@ POST /register
 
 - Result:
 {'status': 'User created successfully'}
+
+POST /pay-order
+- Request: { "nfc_id": "123##", "buyer_auth_token": "eeexssa"}
+- Result: { 'status': 'Order paid!' } or 'Order not paid!'
+
+Add http header authorization with value "auth_token" (juridinio kliento)
