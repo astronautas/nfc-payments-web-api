@@ -2,6 +2,7 @@
 
 Base url: https://thawing-ocean-8598.herokuapp.com
 
+## Users
 POST /login
 - Request: {
   "user": {
@@ -26,6 +27,11 @@ POST /register
 
 - Result:
 {'status': 'User created successfully'}
+
+## Orders
+POST /create-order [must login]
+- Request: { "nfc_id": "xx", "amount": "100" }
+- Response: { 'status': 'Order created/not created', order_object}
 
 POST /pay-order
 [must login]

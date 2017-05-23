@@ -1,5 +1,5 @@
 class Order < ApplicationRecord
-  def confirm
+  def set_confirm
     self[:status] = "Successful"
   end
 

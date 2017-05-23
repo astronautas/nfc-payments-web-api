@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   post '/login', to: 'users#login'
   post '/register', to: 'users#create'
-  get '/auth_test', to: 'users#pass'
+
   post '/pay-order', to: 'orders#pay'
+  post '/create-order', to: 'orders#create'
 end
