@@ -55,3 +55,6 @@ Fake card list: https://stripe.com/docs/testing
 - Result: { 'status': 'Order paid!' } or 'Order not paid!'
 
 Add http header authorization with value "auth_token" (juridinio kliento)
+
+## NFC device
+get '/register-nfc' returns nfc id
