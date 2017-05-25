@@ -11,4 +11,5 @@ order = Order.create(status: 'Pending')
 nfc.order = order
 nfc.save
 
-User.create(email: "test@john.com", password: "123")
+User.create(email: "test@john.com", password: "123", group: "seller")
+User.create(email: "buyer@john.com", password: "123", group: "buyer")
