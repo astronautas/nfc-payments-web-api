@@ -35,7 +35,7 @@ class OrdersController < ApplicationController
     nfc = NfcDevice.find_by(nfc_id: params["nfc_id"])
     nfc.order = order
 
-    if order.save && nfc
+    if order.save && nfc && nfc.save
       render json: {status: 'Order created!', order: order.as_json}, status: :ok
     else
       render json: { status: 'Failed to create order.' }
